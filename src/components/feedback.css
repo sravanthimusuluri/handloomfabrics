@@ -1,0 +1,46 @@
+.feedback-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff4e6; /* soft handloom-like background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feedback-container h2 {
+  color: #8b0000; /* deep red for consistency */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.feedback-container textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.feedback-container button {
+  padding: 10px 25px;
+  background-color: #8b0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.feedback-container button:hover {
+  background-color: #b22222;
+}
+
+.feedback-container .thank-you {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}

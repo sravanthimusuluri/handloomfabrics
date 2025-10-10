@@ -1,0 +1,28 @@
+.cart-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: greenyellow;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid  greenyellow;
+}
+
+.cart-item button {
+  background-color: #ff4d4d;
+  border: black;
+  color: greenyellow;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #e60000;
+}
