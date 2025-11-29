@@ -3,16 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage:": "https://sravanthirumala.github.io/hackathonfabrics/",
+  "homepage": "https://sravanthirumala.github.io/SVN/",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": " npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs": "^4.22.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

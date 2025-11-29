@@ -1,0 +1,156 @@
+/* grid wrapper */
+.grid-wrap {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.grid-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* product card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.thumb {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faf7f5;
+}
+
+.thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* body */
+.card-body {
+  padding: 12px 14px;
+  flex: 1;
+}
+
+.name {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.price {
+  color: #8b0000;
+  font-weight: 700;
+}
+
+/* add to cart button */
+.add-cart {
+  border: none;
+  background: #4caf50;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.add-cart:hover { filter: brightness(.95); }
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Modal box */
+.modal-box {
+  width: 92%;
+  max-width: 760px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* close button */
+.modal-close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* content layout */
+.modal-content {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.modal-image {
+  width: 48%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.modal-details {
+  width: 52%;
+}
+
+.modal-title {
+  margin-top: 6px;
+  font-size: 20px;
+  color: #222;
+}
+
+.modal-price {
+  margin: 8px 0;
+  color: #8b0000;
+  font-weight: 700;
+}
+
+.modal-desc {
+  color: #444;
+  line-height: 1.45;
+}
+
+/* responsive */
+@media (max-width: 720px) {
+  .modal-content { flex-direction: column; }
+  .modal-image, .modal-details { width: 100%; }
+}
